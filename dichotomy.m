@@ -37,6 +37,9 @@ disp(arr)
 x_0=0.2 : 0.01 : 1;
 f_x_0=f(x_0);
 plot(x_0,f_x_0,'b'); %Вывод графика минимизируемой функции
+hold on;
+f_x_arr=f(arr);
+plot(arr,f_x_arr,'ro'); %Вывод точек на оси абсцисс
 end
 
 function f=f(x)
